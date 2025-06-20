@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="shortcut icon" href="image/favicon.png"/>
+    <!-- css  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle">
+
+        </div>
+        <header>
+            <a href=""><img src="img/logo.png" alt="logo" class="logo"></a>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Produk</a></li>
+                <li><a href="#">Terbaru</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Get's Sneaker <br/> Get's <span>Panda's</span></h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, quaerat sunt. Magnam reiciendis officia alias, amet ipsum, ea eaque nisi dolores quidem placeat facilis. Maxime officia autem facere eos alias.</p>
+                <a href="">Pesan Sekarang</a>
+            </div>
+            <div class="imgBox">
+                <img src="img/sepatu1.png" alt="" class="sneaker">
+            </div>        
+        </div>
+        <ul class="thumb">
+            <li><img src="img/thumb1.png" alt="" onclick="imgSlider('img/sepatu1.png');changeColor('#d6d0a9')"></li>
+            <li><img src="img/thumb2.png" alt="" onclick="imgSlider('img/sepatu2.png');changeColor('#656ff7')"></li>
+            <li><img src="img/thumb3.png" alt="" onclick="imgSlider('img/sepatu3.png');changeColor('#c9a665')"></li>
+        </ul>
+        <ul class="sosmed">
+            <li><a href="https://wa.me/6285876252096" target="_blank"><img src="img/wa.png" alt="Whatsapp"></a></li>
+            <li><a href="https://www.instagram.com/nisazahrn" target="_blank"><img src="img/instagram.png" alt="Instagram"></a></li>
+            <li><a href="https://twitter.com/nisazahrn" target="_blank"><img src="img/twitter.png" alt="Twitter"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector ('.sneaker').src = anything;
+        }
+        function changeColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+
+    </script>
+</body>
+</html>

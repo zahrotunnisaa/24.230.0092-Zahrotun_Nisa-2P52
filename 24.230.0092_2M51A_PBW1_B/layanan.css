@@ -1,0 +1,79 @@
+/* Styling untuk halaman layanan.html */
+.services-hero {
+  display: flex;
+  align-items: center;
+  padding: 80px 20px;
+  background-color: #e9ecef;
+}
+
+.services-hero-text {
+  flex: 1;
+  margin-right: 40px;
+}
+
+.services-hero-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.services-hero-text p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #555;
+}
+
+.services-hero-image {
+  flex: 1;
+  min-height: 300px;
+  background-color: #ddd; /* Placeholder untuk gambar */
+  border-radius: 8px;
+}
+
+.our-services-list {
+  padding: 60px 20px;
+}
+
+.our-services-list h3 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+}
+
+.service-item {
+  background-color: #fff;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+  font-size: 2em; /* Placeholder untuk ikon */
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.service-item h4 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.service-item p {
+  font-size: 1.1em;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.service-item ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.nav a.active {
+  font-weight: bold;
+  color: #007bff; /* Contoh warna aktif */
+}

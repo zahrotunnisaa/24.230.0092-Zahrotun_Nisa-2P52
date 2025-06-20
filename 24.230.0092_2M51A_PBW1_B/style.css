@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff6f8;
+}
+
+/* Header */
+.header {
+  background-color: #ffe3ec;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  position: relative;
+  max-width: 70px;
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #ffd6e0;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #d46a92;
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Subheadline */
+.subheadline {
+  padding: 40px 20px;
+  background-color: #fff0f5;
+  text-align: center;
+}
+
+.subheadline h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  padding: 40px 20px;
+  background-color: #ffe9f0;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-placeholder {
+  width: 200px;
+  height: 200px;
+  background-color: #ffc4d6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-text {
+  max-width: 400px;
+}
+
+.about-link {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: underline;
+  color: #c1557c;
+}
+
+/* Services */
+.services {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff6f8;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.service-card {
+  background-color: #ffdce5;
+  padding: 30px;
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Testimonials */
+.testimonials {
+  text-align: center;
+  background-color: #ffe3ec;
+  padding: 40px 20px;
+}
+
+/* Extras */
+.extras {
+  background-color: #fff6f8;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+/* Footer */
+.footer {
+  background-color: #ffd6e0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.footer a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+}
+
+.logo-footer {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Styling tambahan untuk navigasi aktif */
+.nav a.active {
+  font-weight: bold;
+  color: #007bff; /* Contoh warna aktif */
+}

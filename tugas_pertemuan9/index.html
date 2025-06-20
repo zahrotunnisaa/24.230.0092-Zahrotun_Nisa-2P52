@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Penghitung Total Belanja</title>
+</head>
+<body>
+  <h1>Penghitung Total Belanja</h1>
+
+  <p>Masukkan jumlah item belanjaan:</p>
+  <input type="number" id="jumlahItem" />
+  <button onclick="buatForm()">Mulai Input</button>
+
+  <div id="formBarang"></div>
+  <div id="hasil"></div>
+
+  <script>
+    function buatForm() {
+      let jumlah = parseInt(document.getElementById("jumlahItem").value);
+      let formArea = document.getElementById("formBarang");
+      formArea.innerHTML = "";
+
+      if (isNaN(jumlah) || jumlah <= 0) {
+        formArea.innerHTML = "<p>Jumlah harus lebih dari 0</p>";
+        return;
+      }
+
+      for (let i = 1; i <= jumlah; i++) {
+        formArea.innerHTML += `
+          <p>Barang ${i}: <input type="text" id="nama${i}" placeholder="Nama Barang" />
+          Harga: <input type="number" id="harga${i}" placeholder="Harga"/></p>
+        `;
+      }
+
+      formArea.innerHTML += `<button onclick="hitungTotal(${jumlah})">Hitung Total</button>`;
+    }
+
+    function hitungTotal(jumlah) {
+      let total = 0;
+      let daftar = "<h2>Daftar Belanja:</h2><ul>";
+
+      for (let i = 1; i <= jumlah; i++) {
+        let nama = document.getElementById("nama" + i).value;
+        let harga = parseInt(document.getElementById("harga" + i).value);
+
+        if (!nama || isNaN(harga)) {
+          alert("Data barang ke-" + i + " belum lengkap!");
+          return;
+        }
+
+        daftar += `<li>${nama} - Rp${harga}</li>`;
+        total += harga;
+      }
+
+      daftar += "</ul>";
+
+      let diskon = 0;
+      if (total > 100000) {
+        diskon = total * 0.1;
+      }
+
+      let totalAkhir = total - diskon;
+
+      document.getElementById("hasil").innerHTML = daftar +
+        `<p>Total: Rp${total}</p>` +
+        `<p>Diskon: Rp${diskon}</p>` +
+        `<p><strong>Total Akhir: Rp${totalAkhir}</strong></p>`;
+    }
+  </script>
+</body>
+</html>

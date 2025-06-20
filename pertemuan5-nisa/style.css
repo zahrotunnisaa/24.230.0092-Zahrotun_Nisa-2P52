@@ -1,0 +1,132 @@
+html {
+    font-family: poppins;
+}
+
+.nav-logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-link {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.nav-link a {
+    text-decoration: none;
+    font-weight: 300;
+    color: black;
+}
+
+.nav-btn {
+    background-color: transparent;
+    border: solid 1px;
+    padding: 8px 15px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    border-bottom: solid 1px black;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+}
+
+.tagline {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.tagline span {
+    font-size: 16px;
+    font-weight: 400;
+    background-color: blue;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 100px;
+}
+
+.description {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.description span {
+    font-weight: 700;
+}
+
+.btn-red {
+    background-color: blue;
+    border: transparent;
+    padding: 8px 15px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+}
+
+.btn-white {
+    background-color: transparent;
+    border: blue solid;
+    padding: 8px 15px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    color: blue ;
+    border-radius: 100px;
+    width: 100px;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 0 32px;
+}
+
+.hero-bottom {
+    display: flex;
+    background-color: black;
+    padding: 32px 32px;
+    justify-content: space-between;
+}
+
+.project .project-tagline {
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    font-weight: 600;
+
+}
+.project .project-tagline span {
+    color: white;
+}
+.btn-yellow {
+    background-color: orange;
+    padding: 8px 12px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer
+}
+.nav-project {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.nav-project a {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+}
